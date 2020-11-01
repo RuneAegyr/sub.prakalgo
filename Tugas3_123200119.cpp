@@ -36,8 +36,6 @@ main(){
 				cout << "Anda tidak lulus Algoritma dan Pemrograman dengan nilai " << rerata << endl;
 			} else if (rerata>=80) {
 				cout << "Anda lulus Algoritma dan Pemrograman dengan nilai " << rerata << endl;
-			} else {
-				cout << "Input anda salah!";
 			}
 		} else if (matkul==2){
 			cout << "Nilai Harian	: "; cin >> harian;
@@ -52,8 +50,6 @@ main(){
 				cout << "Anda tidak lulus Kalkulus dengan nilai " << rerata << endl;
 			} else if (rerata>=80) {
 				cout << "Anda lulus Kalkulus dengan nilai " << rerata << endl;
-			} else {
-				cout << "Input anda salah!";
 			}
 		} else {
 			cout << "\nInput anda salah!" << endl << endl;
