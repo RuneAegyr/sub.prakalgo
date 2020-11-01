@@ -5,9 +5,8 @@ using namespace std;
 
 main(){
 
-	int matkul, harian, uts, uas;
 	int pass;
-	float rerata;
+	float matkul, harian, uts, uas, rerata;
 	
 	string username;
 	
@@ -30,8 +29,8 @@ main(){
 			cout << "Nilai UAS	: "; cin >> uas;
 			cout << endl;
 			
+			setprecision(4);
 			rerata=(harian+uts+uas)/3;
-			cout << setprecision(4);
 			
 			if (rerata<80){
 				cout << "Anda tidak lulus Algoritma dan Pemrograman dengan nilai " << rerata << endl;
@@ -45,9 +44,9 @@ main(){
 			cout << "Nilai UTS	: "; cin >> uts;
 			cout << "Nilai UAS	: "; cin >> uas;
 			cout << endl;
-				
+			
+			setprecision(4);
 			rerata=(harian+uts+uas)/3;
-			cout << setprecision(4);
 			
 			if (rerata<80){
 				cout << "Anda tidak lulus Kalkulus dengan nilai " << rerata << endl;
