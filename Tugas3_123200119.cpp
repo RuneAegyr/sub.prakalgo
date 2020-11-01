@@ -12,8 +12,8 @@ main(){
 	string username;
 	
 	cout << "Login Akun ==========" << endl;
-	cout << "Username	: "; getline(cin,username);
-	cout << "Password	: "; cin >> pass;
+	cout << "Username	: "; getline(cin,username);		// Username = admin
+	cout << "Password	: "; cin >> pass;				// Password = 123
 	cout << "=====================" << endl;
 	
 	if (username=="admin" && pass==123){
@@ -31,11 +31,14 @@ main(){
 			cout << endl;
 			
 			rerata=(harian+uts+uas)/3;
-			setprecision(4);
+			cout << setprecision(4);
+			
 			if (rerata<80){
 				cout << "Anda tidak lulus Algoritma dan Pemrograman dengan nilai " << rerata << endl;
-			} else {
+			} else if (rerata>=80) {
 				cout << "Anda lulus Algoritma dan Pemrograman dengan nilai " << rerata << endl;
+			} else {
+				cout << "Input anda salah!";
 			}
 		} else if (matkul==2){
 			cout << "Nilai Harian	: "; cin >> harian;
@@ -44,14 +47,17 @@ main(){
 			cout << endl;
 				
 			rerata=(harian+uts+uas)/3;
-			setprecision(4);
+			cout << setprecision(4);
+			
 			if (rerata<80){
 				cout << "Anda tidak lulus Kalkulus dengan nilai " << rerata << endl;
-			} else {
+			} else if (rerata>=80) {
 				cout << "Anda lulus Kalkulus dengan nilai " << rerata << endl;
+			} else {
+				cout << "Input anda salah!";
 			}
 		} else {
-			cout << "\nInput anda salah!" << endl;
+			cout << "\nInput anda salah!" << endl << endl;
 		}
 	} else if (username!="admin" && pass==123){
 		cout << "Username anda salah!";
