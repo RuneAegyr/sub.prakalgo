@@ -6,7 +6,7 @@ using namespace std;
 main(){
 
 	int pass;
-	float matkul, harian, uts, uas, rerata;
+	double matkul, harian, uts, uas, rerata;
 	
 	string username;
 	
@@ -29,7 +29,7 @@ main(){
 			cout << "Nilai UAS	: "; cin >> uas;
 			cout << endl;
 			
-			setprecision(4);
+			cout << fixed << setprecision(4);
 			rerata=(harian+uts+uas)/3;
 			
 			if (rerata<80){
@@ -44,8 +44,8 @@ main(){
 			cout << "Nilai UTS	: "; cin >> uts;
 			cout << "Nilai UAS	: "; cin >> uas;
 			cout << endl;
-			
-			setprecision(4);
+		
+			cout << fixed << setprecision(4);
 			rerata=(harian+uts+uas)/3;
 			
 			if (rerata<80){
