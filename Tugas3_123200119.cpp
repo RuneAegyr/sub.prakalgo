@@ -5,14 +5,14 @@ using namespace std;
 
 main(){
 
-	int pass;
-	double matkul, harian, uts, uas, rerata;
+	int pass, matkul;
+	float harian, uts, uas, rerata;
 	
 	string username;
 	
 	cout << "Login Akun ==========" << endl;
-	cout << "Username	: "; getline(cin,username);		// Username = admin
-	cout << "Password	: "; cin >> pass;				// Password = 123
+	cout << "Username	: "; getline(cin,username);		//Username = admin
+	cout << "Password	: "; cin >> pass;		//Password = 123
 	cout << "=====================" << endl;
 	
 	if (username=="admin" && pass==123){
@@ -63,4 +63,4 @@ main(){
 	}
 }
 	
-//Dentang Canang Wardhana - 123200119
+//123200119 - Dentang Canang Wardhana
