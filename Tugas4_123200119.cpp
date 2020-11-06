@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	int N,M,pilih,n,m;
+	int N,M,pilih,n,m; //n = hasil
 
 	cout << "Perkalian & Perpangkatan=====" << endl;
 	cout << "1. Perkalian" << endl;
@@ -20,10 +20,10 @@ int main()
 			n = M;
 			m = 0;
 			
-			while(m<=N){				// n = hasil
+			while(m<=N){
 				m++;
 				if(m<N){
-					n = M + n; //n+1=M
+					n = M + n;
 					cout << M << " x ";
 				} else if(m == N){
 					cout << M << " = " << n << endl;
