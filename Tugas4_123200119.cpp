@@ -20,10 +20,10 @@ int main()
 			n = M;
 			m = 0;
 			
-			while(m<=N){
+			while(m<=N){				// n = hasil
 				m++;
 				if(m<N){
-					n = M + n;
+					n = M + n; //n+1=M
 					cout << M << " x ";
 				} else if(m == N){
 					cout << M << " = " << n << endl;
@@ -53,7 +53,9 @@ int main()
 	}
 
 	cout << "\nTerima kasih :)" << endl;
-
+	
+	system("pause");
+	cin.get();
 	return 0;
 }
 
