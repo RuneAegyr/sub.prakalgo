@@ -52,7 +52,7 @@ int main()
 			cout  << "salah input!" << endl;
 	}
 
-	cout << "\nTerima kasih :)" << endl;
+	cout << "\nTerima kasih :)" << endl << endl;
 	
 	system("pause");
 	cin.get();
