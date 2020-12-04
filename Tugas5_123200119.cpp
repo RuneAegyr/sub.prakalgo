@@ -46,7 +46,7 @@ main(){
 			}
 			break;
 		default :
-			cout << "Input anda salah\n";
+			cout << "Input anda salah!\n";
 	}
 	cout << endl;
 	
