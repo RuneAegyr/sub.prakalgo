@@ -1,11 +1,10 @@
 #include <iostream>
-#include <conio.h>
 
 using namespace std;
 
 main(){
 	
-	int pil,p,l,t,m,n,a,b;
+	int pil,p,l,t,m,n;
 	
 	cout << "Gambar Bangun Datar ===========\n";
 	cout << "1. Kotak bolong\n";
@@ -21,8 +20,9 @@ main(){
 				for(n=1;n<=l;n++){
 					if(m==1||m==p||n==1||n==l){
 						cout << "* ";
-					}else
+					}else{
 						cout << "  ";
+					}	
 				}
 				cout << endl;
 			}
@@ -30,18 +30,18 @@ main(){
 		case 2 :
 			cout << "Tinggi : "; cin >> t;
 			for(m=1;m<=t;m++){
-				a=t-1;
-				b=m;
-				for(n=1;n<=b;n++){
+				p=t-1;
+				l=m;
+				for(n=1;n<=l;n++){
 					if(n==1){
 						cout << m << " ";
 					}else{
-						cout << m+a << " ";
-						m=m+a;
-						a--;
+						cout << m+p << " ";
+						m=m+p;
+						p--;
 					}
 				}
-				m=b;
+				m=l;
 				cout << endl;
 			}
 			break;
@@ -54,3 +54,5 @@ main(){
 	cin.get();
 	return 0;
 }
+
+//123200119 - Dentang Canang Wardhana
