@@ -2,72 +2,49 @@
 
 using namespace std;
 
-int luas(){
-	
-	int r;
-	float L;
-	
-	cout << "Jari - jari     : "; cin >> r;
-	L = 3.14 * r * r;
-	cout << "Luas Lingkaran adalah " << L << endl;
-	
-	return 0;
+double luas(double r){
+	return 3.14 * r * r;
 }
 
-int kel(){
-	
-	int r;
-	float K;
-	
-	cout << "Jari - jari     : "; cin >> r;
-	K = 2 * 3.14 * r;
-	cout << "Keliling Lingkaran adalah " << K << endl;
-	
-	return 0;
+double kel(double r){
+	return 2 * 3.14 * r;
 }
 
-int vol(){
-	
-	int r,t;
-	float V;
-	
-	cout << "Jari - jari     : "; cin >> r;
-	cout << "Tinggi          : "; cin >> t;
-	V = 3.14 * r * r * t;
-	cout << "Volume Tabung adalah " << V << endl;
-	
-	return 0;
+double vol(double r,double t){
+	return 3.14 * r * r * t;
 }
 
 int main(){
 	
 	int pil;
+	double r,t;
 	char pil2;
 	
-	cout << "Hitung Lingkaran ==========\n";
-	cout << "1. Luas Lingkaran\n";
-	cout << "2. Keliling Lingkaran\n";
-	cout << "3. Volume Tabung\n";
-	cout << "Pilih: "; cin >> pil;
-	switch (pil){
-		case 1:
-			luas();
-			break;
-		case 2:
-			kel();
-			break;
-		case 3:
-			vol();
-			break;
-		default :
-			cout << "Input Salah :)\n";
-	}
-	cout << "Ulangi program? (y/n) "; cin >> pil2; cout << endl;
-	if(pil2=='y'){
-		main();
-	}else{
-		cout << "Program selesai, Terima kasih :)\n\n";
-	}
+	do{
+		cout << "Hitung Lingkaran ==========\n";
+		cout << "1. Luas Lingkaran\n";
+		cout << "2. Keliling Lingkaran\n";
+		cout << "3. Volume Tabung\n";
+		cout << "Pilih: "; cin >> pil;
+		switch (pil){
+			case 1:
+				cout << "Jari - jari     : "; cin >> r;
+				cout << "Luas Lingkaran adalah " << luas(r) << endl;
+				break;
+			case 2:
+				cout << "Jari - jari     : "; cin >> r;
+				cout << "Keliling Lingkaran adalah " << kel(r) << endl;
+				break;
+			case 3:
+				cout << "Jari - jari     : "; cin >> r;
+				cout << "Tinggi          : "; cin >> t;
+				cout << "Volume Tabung adalah " << vol(r,t) << endl;
+				break;
+			default :
+				cout << "Input Salah :)\n";
+		}
+		cout << "Ulangi program? (y/n) "; cin >> pil2; cout << endl;
+	}while(pil=='y');
 	
 	system("pause");
 	cin.get();
